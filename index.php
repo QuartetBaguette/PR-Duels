@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Teko:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="../Images/xlarge.jpg" type="image/gif" sizes="16x16">
+    <link rel="icon" href="images/xlarge.jpg" type="image/gif" sizes="16x16">
     <title>Patrick-Ruben Duel counter</title>
   </head>
 

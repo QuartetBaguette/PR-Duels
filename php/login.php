@@ -1,7 +1,7 @@
 <?php 
 session_start();  
 
-require '../../private/config.php';  
+require '/private/config.php';
 
 $password = $_POST['password']; 
 $username = $_POST['username'];  

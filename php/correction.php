@@ -2,12 +2,12 @@
 session_start();
 
 if(!isset($_SESSION['loggedin'])){
-    header('Location: ../index.php');
+    header('Location: /index.php');
     die();
 }
 
 if($_SESSION['loggedin'] == "Ruby" || $_SESSION['loggedin'] == "Patty"){
-    require '../../Private/config.php';
+    require '/private/config.php';
 
     if($_GET['user'] == "patrick"){
         $query = "UPDATE points SET points_patrick = points_patrick -1";
@@ -22,6 +22,6 @@ if($_SESSION['loggedin'] == "Ruby" || $_SESSION['loggedin'] == "Patty"){
     }
 }
 
-header('Location: ../index.php');
+header('Location: /index.php');
 
 ?>
