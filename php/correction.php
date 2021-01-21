@@ -7,7 +7,7 @@ if(!isset($_SESSION['loggedin'])){
 }
 
 if($_SESSION['loggedin'] == "Ruby" || $_SESSION['loggedin'] == "Patty"){
-    require '/private/config.php';
+    require '../private/config.php';
 
     if($_GET['user'] == "patrick"){
         $query = "UPDATE points SET points_patrick = points_patrick -1";
