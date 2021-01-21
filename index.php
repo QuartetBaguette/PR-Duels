@@ -1,5 +1,5 @@
 <?php
-    include '../private/config.php';
+    include 'private/config.php';
 
   if (isset($_GET['page'])){
     $page = $_GET['page'];
