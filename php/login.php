@@ -1,6 +1,8 @@
 <?php 
 session_start();  
 
+require '../private/config.php';
+
 $password = $_POST['password']; 
 $username = $_POST['username'];  
 
@@ -11,17 +13,17 @@ $sth->execute();
 $data = $sth->fetch(PDO::FETCH_ASSOC);
 
 if($data == false){
-    header('Location: ../index.php?page=login');
+    header('Location: /index.php?page=login');
 }
 
     if ($password == $data['password']) {
         $_SESSION['loggedin'] = $data['username'];     
         
-        header('location:../index.php?page=home');
+        header('location: /index.php?page=home');
     }
 
     else{
-        header('Location: ../index.php?page=login');
+        header('Location: /index.php?page=login');
     }
 
 ?>
