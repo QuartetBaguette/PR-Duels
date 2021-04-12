@@ -1,17 +1,14 @@
 <?php
-// Define database
-define('dbhost', 'localhost');
-define('dbuser', 'root');
-define('dbpass', '');
-define('dbname', 'duels_counter');
-
-// Connecting database
-try {
-	$connect = new PDO("mysql:host=".dbhost."; dbname=".dbname, dbuser, dbpass);
-	$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+class DB {
+	static function connection() {
+		try {
+			$connect = new PDO("mysql:host=localhost; dbname=duels_counter", "root", "");
+			$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			return $connect;
+		}
+		catch(PDOException $e) {
+			echo $e->getMessage();
+		}
+	}
 }
-catch(PDOException $e) {
-	echo $e->getMessage();
-}
-
 ?>

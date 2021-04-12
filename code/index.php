@@ -1,5 +1,6 @@
 <?php
     include '../private/config.php';
+    require '../code/php/functions.php';
 
   if (isset($_GET['page'])){
     $page = $_GET['page'];
@@ -32,7 +33,7 @@
     <!-- Main content -->
     <?php
       session_start();
-      include 'includes/'.$page.'.inc.php';
+      include './includes/'.$page.'.inc.php';
     ?>
   </body>
 

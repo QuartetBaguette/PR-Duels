@@ -1,5 +1,6 @@
 <?php
-require 'php/get_score.php';
+$points_p1 = functions::getScore(1);
+$points_p2 = functions::getScore(2);
 ?>
 
 <div id="banner">
@@ -19,12 +20,12 @@ require 'php/get_score.php';
     <div class="row">
         <div class="col l1"></div>
         <div class="col l4">
-            <h1 class="wht center-align"><?php echo $points['points_patrick']; ?> Wins</h1>
+            <h1 class="wht center-align"><?php echo $points_p1; ?> Wins</h1>
 
             <?php if(isset($_SESSION['loggedin'])) {?>
                 <div class="center-align">
-                    <a class="button" href="php/add_point.php?user=patrick"><button class="btn-large waves-effect cyan darken-4" type="submit" name="action">Patrick won</button></a>
-                    <a class="button" href="php/correction.php?user=patrick"><button class="btn-large waves-effect cyan darken-4" type="submit" name="action">Correction</button></a>
+                    <a class="button" href="php/get.php?pAddPoint=1"><button class="btn-large waves-effect cyan darken-4" type="submit" name="action">Patrick won</button></a>
+                    <a class="button" href="php/get.php?pCorrect=1"><button class="btn-large waves-effect cyan darken-4" type="submit" name="action">Correction</button></a>
                 </div>
             <?php } ?>
         </div>
@@ -32,12 +33,12 @@ require 'php/get_score.php';
             <h1 class="wht center-align">-</h1>
         </div>
         <div class="col l4">
-            <h1 class="wht center-align"><?php echo $points['points_ruben']; ?> Wins</h1>
+            <h1 class="wht center-align"><?php echo $points_p2; ?> Wins</h1>
 
             <?php if(isset($_SESSION['loggedin'])) {?>
                 <div class="center-align">
-                    <a class="button" href="php/add_point.php?user=ruben"><button class="btn-large waves-effect cyan darken-4" type="submit" name="action">Ruben won</button></a>
-                    <a class="button" href="php/correction.php?user=ruben"><button class="btn-large waves-effect cyan darken-4" type="submit" name="action">Correction</button></a>
+                    <a class="button" href="php/get.php?pAddPoint=2"><button class="btn-large waves-effect cyan darken-4" type="submit" name="action">Ruben won</button></a>
+                    <a class="button" href="php/get.php?pCorrect=2"><button class="btn-large waves-effect cyan darken-4" type="submit" name="action">Correction</button></a>
                 </div>
             <?php } ?>
         </div>
