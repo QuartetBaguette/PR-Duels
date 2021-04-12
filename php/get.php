@@ -1,6 +1,6 @@
 <?php
     require 'functions.php';
-    require '../../Private/config.php';
+    require '../Private/config.php';
 
     if(isset($_GET['pAddPoint'])){
         functions::addPoint($_GET['pAddPoint']);

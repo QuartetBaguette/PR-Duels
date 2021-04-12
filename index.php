@@ -1,6 +1,6 @@
 <?php
-    include '../private/config.php';
-    require '../code/php/functions.php';
+    include 'private/config.php';
+    require 'php/functions.php';
 
   if (isset($_GET['page'])){
     $page = $_GET['page'];
