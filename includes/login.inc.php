@@ -4,7 +4,7 @@ if (isset($_SESSION['dangerMsg'])) {
 }
 ?>
 
-<div class="login-background">
+<div class="login">
     <div class="container" id="banner-white">
         <form action="php/login.php" method="post">
             <div class="row">
@@ -28,17 +28,15 @@ if (isset($_SESSION['dangerMsg'])) {
                 </div>
                 <div class="row">
                     <div class="col">
-                        <input class="btn-large waves-effect cyan lighten-2" type="submit" name="login" value="Login">
+                        <input class="btn-large waves-effect cyan darken-4" type="submit" name="login" value="Login">
+                    </div>
+        </form>
+                    <div class="col">
+                        <a href="index.php">
+                            <button class="btn-large waves-effect cyan darken-4">Go back</button>
+                        </a>
                     </div>
                 </div>
-        </form>
-        <div class="row">
-            <div class="col">
-                <a href="../index.php">
-                    <button class="btn-large waves-effect cyan lighten-2">Go back</button>
-                </a>
-
             </div>
-
-        </div>
     </div>
+</div>

@@ -38,5 +38,13 @@ class functions {
 
         header('Location: ../index.php');
     }
+
+    static function getRecentHistory() {
+        $query = 'SELECT DK_patrick, DK_ruben, mode_name, map_name FROM match_history JOIN maps ON match_map = map_id JOIN gamemodes ON gamemode = mode_id ORDER BY match_id DESC LIMIT 20';
+        $stmt = DB::connection() -> prepare($query);
+        $stmt -> execute();
+        $history = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+        return $history;
+    }
 }
 ?>
