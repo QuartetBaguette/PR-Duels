@@ -1,7 +1,7 @@
 <?php
-    if(isset($_SESSION['dangerMsg'])){
-        unset($_SESSION['dangerMsg']);
-    }
+if (isset($_SESSION['dangerMsg'])) {
+    unset($_SESSION['dangerMsg']);
+}
 ?>
 
 <div class="login-background">
@@ -29,11 +29,16 @@
                 <div class="row">
                     <div class="col">
                         <input class="btn-large waves-effect cyan lighten-2" type="submit" name="login" value="Login">
-                        </form>
-                        <a href="index.php"><button class="btn-large waves-effect cyan lighten-2" type="submit">Go back</button></a>
                     </div>
                 </div>
-            </div> 
-        
+        </form>
+        <div class="row">
+            <div class="col">
+                <a href="../index.php">
+                    <button class="btn-large waves-effect cyan lighten-2">Go back</button>
+                </a>
+
+            </div>
+
+        </div>
     </div>
-</div>

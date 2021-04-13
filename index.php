@@ -33,7 +33,7 @@
     <div id="maincontent" class="container">
     <?php
       session_start();
-      include './includes/'.$page.'.inc.php';
+      include 'includes/'.$page.'.inc.php';
     ?>
     </div>
   </body>
