@@ -3,7 +3,7 @@ $points_p1 = functions::getScore(1);
 $points_p2 = functions::getScore(2);
 ?>
 
-<div id="banner">
+<div id="banner" class="row">
 </br>
 
     <h1 class="wht center-align" id="title">De tussenstand van de duels tussen Patrick en Ruben</h1> </br> </br>

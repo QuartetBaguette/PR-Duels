@@ -2,13 +2,16 @@
     font-family: 'Asap', sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 #banner {
     background-color: black;
     height: 100vh;
 }
 
 .login-background{
-    background-color: black;
     height: 100vh;
     padding-top: 5%;
 }

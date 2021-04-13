@@ -7,7 +7,7 @@ $password = $_POST['password'];
 $username = $_POST['username'];  
 
 $query = 'SELECT * FROM users WHERE username = :username'; 
-$sth = $connect->prepare($query); 
+$sth = DB::connection()->prepare($query); 
 $sth->bindParam('username', $username); 
 $sth->execute(); 
 $data = $sth->fetch(PDO::FETCH_ASSOC);

@@ -30,7 +30,7 @@
                     <div class="col">
                         <input class="btn-large waves-effect cyan lighten-2" type="submit" name="login" value="Login">
                         </form>
-                        <a href="index.php?page=home"><button class="btn-large waves-effect cyan lighten-2" type="submit">Go back</button></a>
+                        <a href="index.php"><button class="btn-large waves-effect cyan lighten-2" type="submit">Go back</button></a>
                     </div>
                 </div>
             </div> 

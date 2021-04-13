@@ -21,20 +21,21 @@
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/materialize.js"></script>
-    <link rel="shortcut icon" type="image/png" href="../Images/hmm.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Teko:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="../Images/xlarge.jpg" type="image/gif" sizes="16x16">
+    <link rel="icon" href="Images/xlarge.jpg" type="image/gif" sizes="16x16">
     <title>Patrick-Ruben Duel counter</title>
   </head>
 
   <body>
     <!-- Main content -->
+    <div id="maincontent" class="container">
     <?php
       session_start();
       include './includes/'.$page.'.inc.php';
     ?>
+    </div>
   </body>
 
   <div class="footer">
